@@ -16,7 +16,7 @@ destroyBtnRef.addEventListener("click", destroyBoxes);
 // });
 
 const markup = [];
-let amount = inputAmountRef.value;
+
 function createBoxes(amount) {
   for (let i = 0; i <= inputAmountRef.value; i += 1) {
     const newDivEl = `<div style ="background-color: ${getRandomHexColor()};width: ${
@@ -25,6 +25,7 @@ function createBoxes(amount) {
     markup.push(newDivEl);
 
     console.log(markup);
+    return markup;
   }
 }
 
